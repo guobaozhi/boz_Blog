@@ -1,6 +1,6 @@
 baseURL = 'https://brilliant-bunny-90b32b.netlify.app'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Boz'Blog"
 theme = 'paperMod'
 
 
