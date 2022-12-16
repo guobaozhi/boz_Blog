@@ -2,3 +2,200 @@ baseURL = 'https://brilliant-bunny-90b32b.netlify.app'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'paperMod'
+
+
+enableInlineShortcodes = true
+enableEmoji = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+paginate = 15
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[minify]
+disableXML = true
+
+[permalinks]
+post = "/:title/"
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+  [languages.en.profileMode]
+  enabled = true
+  title = "顺境修身，逆境养心"
+  subtitle = "💡愿我们既能知道很多道理，也能过好自己的一生。"
+  images = [ "<link or path of image for opengraph, twitter-cards>" ]
+
+    [[languages.en.profileMode.buttons]]
+    name = "👨🏻‍💻交互"
+    url = "posts/ux"
+
+    [[languages.en.profileMode.buttons]]
+    name = "📕阅读"
+    url = "posts/read"
+
+    [[languages.en.profileMode.buttons]]
+    name = "🏖生活"
+    url = "posts/life"
+
+[[languages.en.menu.main]]
+identifier = "search"
+name = "🔍搜索"
+url = "search"
+weight = 1
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "🏠主页"
+url = "/"
+weight = 2
+
+[[languages.en.menu.main]]
+identifier = "posts"
+name = "📚文章"
+url = "posts"
+weight = 3
+
+[[languages.en.menu.main]]
+identifier = "archives"
+name = "⏱时间轴"
+url = "archives/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "tags"
+name = "🔖标签"
+url = "tags"
+weight = 40
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "🙋🏻‍♂️关于"
+url = "about"
+weight = 50
+
+[[languages.en.menu.main]]
+identifier = "links"
+name = "🤝友链"
+url = "links"
+weight = 60
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+author = "boz"
+defaultTheme = "auto"
+disableThemeToggle = false
+DateFormat = "2006-01-02"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+hideFooter = false
+ShowWordCounts = true
+VisitCount = true
+ShowLastMod = true
+ShowToc = true
+TocOpen = true
+comments = true
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/guobaozhi"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://www.twitter.com/"
+
+  [[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/"
+
+#   [[params.socialIcons]]
+#   name = "instagram"
+#   url = "img/instagram.png"
+
+#   [[params.socialIcons]]
+#   name = "QQ"
+#   url = "img/qq.png"
+
+#   [[params.socialIcons]]
+#   name = "WeChat"
+#   url = "img/wechat.png"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:261658157@qq.com"
+
+  [[params.socialIcons]]
+  name = "RSS"
+  url = "index.xml"
+
+  [params.cover]
+  linkfullImages = true
+
+  [params.assets]
+  favicon = "img/Q.gif"
+  favicon16x16 = "img/Q.gif"
+  favicon32x32 = "img/Q.gif"
+  apple_touch_icon = "Q.gif"
+  safari_pinned_tab = "Q.gif"
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 1
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary" ]
+
+  [params.twikoo]
+  version = "1.5.11"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+style = "darcula"
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
